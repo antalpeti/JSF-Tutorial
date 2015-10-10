@@ -1,22 +1,19 @@
-package com.luv2code.jsf.tutorial;
+package com.luv2code.jsf.hello;
 
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class StudentFour {
+public class Student {
 
   private String firstName;
   private String lastName;
 
-  // since the user can select multiple languages
-  // we need an array of strings
-
-  private String[] favoriteLanguages;
-
-  public StudentFour() {
+  // create no-arg constructor
+  public Student() {
 
   }
 
+  // define getter/setter methods
   public String getFirstName() {
     return firstName;
   }
@@ -31,14 +28,6 @@ public class StudentFour {
 
   public void setLastName(String lastName) {
     this.lastName = lastName;
-  }
-
-  public String[] getFavoriteLanguages() {
-    return favoriteLanguages;
-  }
-
-  public void setFavoriteLanguages(String[] favoriteLanguages) {
-    this.favoriteLanguages = favoriteLanguages;
   }
 
 }

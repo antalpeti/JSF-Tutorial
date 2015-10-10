@@ -1,4 +1,4 @@
-package com.luv2code.jsf.tutorial;
+package com.luv2code.jsf.hello;
 
 import java.util.ArrayList;
 import java.util.List;
