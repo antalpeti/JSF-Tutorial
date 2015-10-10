@@ -34,4 +34,5 @@ public class StudentThree {
   public void setFavoriteLanguage(String favoriteLanguage) {
     this.favoriteLanguage = favoriteLanguage;
   }
+
 }
