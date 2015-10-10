@@ -9,27 +9,24 @@
 <h:body>
 	<h:form>
 	
-	First name: <h:inputText id="firstName" value="#{studentTwo.firstName}" />
+		First name: <h:inputText id="firstName"
+			value="#{studentTwo.firstName}" />
+
+		<br />
+		<br />
 	
-	<br/><br/>
-	
-	Last name: <h:inputText id="lastName" value="#{studentTwo.lastName}" />
-	
-	<br/><br/>
+		Last name: <h:inputText id="lastName" value="#{studentTwo.lastName}" />
+
+		<br />
+		<br />
 	
 	Country:
 	<h:selectOneMenu value="#{studentTwo.country}">
-		<f:selectItem itemValue="Brazil" itemLabel="Brazil"/> 
-		<f:selectItem itemValue="France" itemLabel="France"/> 
-		<f:selectItem itemValue="Germany" itemLabel="Germany"/> 
-		<f:selectItem itemValue="India" itemLabel="India"/> 
-		<f:selectItem itemValue="Turkey" itemLabel="Turkey"/> 
-		<f:selectItem itemValue="United Kingdom" itemLabel="United Kingdom"/> 
-		<f:selectItem itemValue="United States" itemLabel="United States"/> 
-	</h:selectOneMenu>
-	
-	<h:commandButton value="Submit" action=	 "student_two_response"/>
-	
+			<f:selectItems value="#{studentTwo.countryOptions}" />
+		</h:selectOneMenu>
+
+		<h:commandButton value="Submit" action="student_two_response" />
+
 	</h:form>
 </h:body>
 

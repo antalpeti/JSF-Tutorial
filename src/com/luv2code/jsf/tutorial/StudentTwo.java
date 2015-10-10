@@ -1,5 +1,8 @@
 package com.luv2code.jsf.tutorial;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
@@ -9,9 +12,27 @@ public class StudentTwo {
   private String lastName;
   private String country;
 
+  // list of countries for the drop-down list
+  List<String> countryOptions;
+
   // no-arg constructor
   public StudentTwo() {
+    // populate the list countries
+    countryOptions = new ArrayList<>();
 
+    countryOptions.add("Brazil");
+    countryOptions.add("France");
+    countryOptions.add("Germany");
+    countryOptions.add("India");
+    countryOptions.add("Turkey");
+    countryOptions.add("United Kingdom");
+    countryOptions.add("United States");
+
+  }
+
+  // need to add a getter method for country options
+  public List<String> getCountryOptions() {
+    return countryOptions;
   }
 
   // getter/setter methods
@@ -38,4 +59,5 @@ public class StudentTwo {
   public void setCountry(String country) {
     this.country = country;
   }
+
 }
