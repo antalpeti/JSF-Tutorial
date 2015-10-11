@@ -3,18 +3,17 @@ package com.luv2code.jsf.hello;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class StudentFive {
+public class StudentHello {
+
   private String firstName;
   private String lastName;
-  private String favoriteLanguage;
 
-  public StudentFive() {
-    // pre-populate the bean
-    firstName = "Mary";
-    lastName = "Public";
-    favoriteLanguage = "Ruby";
-  };
+  // create no-arg constructor
+  public StudentHello() {
 
+  }
+
+  // define getter/setter methods
   public String getFirstName() {
     return firstName;
   }
@@ -29,14 +28,6 @@ public class StudentFive {
 
   public void setLastName(String lastName) {
     this.lastName = lastName;
-  }
-
-  public String getFavoriteLanguage() {
-    return favoriteLanguage;
-  }
-
-  public void setFavoriteLanguage(String favoriteLanguage) {
-    this.favoriteLanguage = favoriteLanguage;
   }
 
 }

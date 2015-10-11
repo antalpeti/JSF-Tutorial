@@ -3,7 +3,7 @@ package com.luv2code.jsf.hello;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class StudentFour {
+public class StudentFourHello {
 
   private String firstName;
   private String lastName;
@@ -13,7 +13,7 @@ public class StudentFour {
 
   private String[] favoriteLanguages;
 
-  public StudentFour() {
+  public StudentFourHello() {
 
   }
 

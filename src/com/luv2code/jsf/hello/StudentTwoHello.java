@@ -6,7 +6,7 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class StudentTwo {
+public class StudentTwoHello {
 
   private String firstName;
   private String lastName;
@@ -16,7 +16,7 @@ public class StudentTwo {
   List<String> countryOptions;
 
   // no-arg constructor
-  public StudentTwo() {
+  public StudentTwoHello() {
     // populate the list countries
     countryOptions = new ArrayList<>();
 

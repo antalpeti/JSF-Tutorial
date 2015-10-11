@@ -5,12 +5,12 @@
 	<title>Student FOUR Confirmation</title>
 </h:head>
 <h:body>
-	The student is confirmed: #{studentFour.firstName} #{studentFour.lastName}
+	The student is confirmed: #{studentFourHello.firstName} #{studentFourHello.lastName}
 	<br />
 	<br />
 	The student's favorite programming languages: 
 	<ul>
-		<ui:repeat value="#{studentFour.favoriteLanguages}" var="tempLanguage">
+		<ui:repeat value="#{studentFourHello.favoriteLanguages}" var="tempLanguage">
 			<li>#{tempLanguage}</li>
 		</ui:repeat>
 	</ul>

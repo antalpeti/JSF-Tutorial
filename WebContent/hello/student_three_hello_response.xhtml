@@ -4,9 +4,9 @@
 	<title>Student THREE Confirmation</title>
 </h:head>
 <h:body>
-	The student is confirmed: #{studentThree.firstName} #{studentThree.lastName}
+	The student is confirmed: #{studentThreeHello.firstName} #{studentThreeHello.lastName}
 	<br />
 	<br />
-	The student's favorite programming language: #{studentThree.favoriteLanguage}
+	The student's favorite programming language: <h:outputText value="#{studentThreeHello.favoriteLanguage}"/>
 </h:body>
 </html>

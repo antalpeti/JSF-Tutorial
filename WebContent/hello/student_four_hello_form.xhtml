@@ -2,26 +2,26 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 <h:head>
-	<title>Student FIVE Registration Form</title>
+	<title>Student FOUR Registration Form</title>
 </h:head>
 <h:body>
 	<h:form>
-	First name: <h:inputText id="firstName" value="#{studentFive.firstName}" />
+	First name: <h:inputText id="firstName" value="#{studentFourHello.firstName}" />
 		<br />
 		<br />
-	Last name: <h:inputText id="lastName" value="#{studentFive.lastName}" />
+	Last name: <h:inputText id="lastName" value="#{studentFourHello.lastName}" />
 		<br />
 		<br />
-	Favorite Programming Languages:
-	<h:selectOneRadio value="#{studentFive.favoriteLanguage}">
+	Favorite Programming Languages: 
+	<h:selectManyCheckbox value="#{studentFourHello.favoriteLanguages}">
 			<f:selectItem itemValue="Java" itemLabel="Java" />
 			<f:selectItem itemValue="C#" itemLabel="C#" />
 			<f:selectItem itemValue="PHP" itemLabel="PHP" />
 			<f:selectItem itemValue="Ruby" itemLabel="Ruby" />
-		</h:selectOneRadio>
+		</h:selectManyCheckbox>
 		<br />
 		<br />
-		<h:commandButton value="Submit" action="student_five_response" />
+		<h:commandButton value="Submit" action="student_four_hello_response" />
 	</h:form>
 </h:body>
 </html>

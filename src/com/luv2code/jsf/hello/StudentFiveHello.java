@@ -3,13 +3,17 @@ package com.luv2code.jsf.hello;
 import javax.faces.bean.ManagedBean;
 
 @ManagedBean
-public class StudentThree {
-
+public class StudentFiveHello {
   private String firstName;
   private String lastName;
   private String favoriteLanguage;
 
-  public StudentThree() {}
+  public StudentFiveHello() {
+    // pre-populate the bean
+    firstName = "Mary";
+    lastName = "Public";
+    favoriteLanguage = "Ruby";
+  };
 
   public String getFirstName() {
     return firstName;
