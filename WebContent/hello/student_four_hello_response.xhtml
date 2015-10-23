@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+<html
+	lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <h:head>
 	<title>Student FOUR Confirmation</title>
@@ -10,7 +13,9 @@
 	<br />
 	The student's favorite programming languages: 
 	<ul>
-		<ui:repeat value="#{studentFourHello.favoriteLanguages}" var="tempLanguage">
+		<ui:repeat
+			value="#{studentFourHello.favoriteLanguages}"
+			var="tempLanguage">
 			<li>#{tempLanguage}</li>
 		</ui:repeat>
 	</ul>
