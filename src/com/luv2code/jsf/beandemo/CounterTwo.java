@@ -7,24 +7,24 @@ import javax.faces.bean.ManagedBean;
 @ApplicationScoped
 public class CounterTwo {
 
-	private int value = 0;
+  private int value = 0;
 
-	public String increment() {
-		value++;
-		
-		return "student_two";
-	}
+  public String increment() {
+    value++;
 
-	public CounterTwo() {
-		
-	}
-	
-	public int getValue() {
-		return value;
-	}
+    return "student_two";
+  }
 
-	public void setValue(int value) {
-		this.value = value;
-	}
+  public CounterTwo() {
+
+  }
+
+  public int getValue() {
+    return value;
+  }
+
+  public void setValue(int value) {
+    this.value = value;
+  }
 
 }
