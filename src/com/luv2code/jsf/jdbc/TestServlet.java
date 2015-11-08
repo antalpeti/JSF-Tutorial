@@ -17,37 +17,37 @@ import javax.sql.DataSource;
 @WebServlet("/TestServlet")
 public class TestServlet extends HttpServlet {
 
-	@Resource(name = "jdbc/student_tracker")
-	private DataSource dataSource;
+  @Resource(name = "jdbc/student_tracker")
+  private DataSource dataSource;
 
-	protected void doGet(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
+  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+      throws ServletException, IOException {
 
-		PrintWriter out = response.getWriter();
-		response.setContentType("text/plain");
-		
-		Connection myConn = null;
-		Statement myStmt = null;
-		ResultSet myRs = null;
+    PrintWriter out = response.getWriter();
+    response.setContentType("text/plain");
 
-		try {
-			myConn = dataSource.getConnection();
+    Connection myConn = null;
+    Statement myStmt = null;
+    ResultSet myRs = null;
 
-			String sql = "select * from student;";
+    try {
+      myConn = dataSource.getConnection();
 
-			myStmt = myConn.createStatement();
+      String sql = "select * from student;";
 
-			myRs = myStmt.executeQuery(sql);
+      myStmt = myConn.createStatement();
 
-			while (myRs.next()) {
-				String email = myRs.getString("email");
-				out.println(email);
-				System.out.println(email);
-			}
-		} catch (Exception exc) {
-			exc.printStackTrace();
-			out.println(exc.getMessage());
-		}
-	}
+      myRs = myStmt.executeQuery(sql);
+
+      while (myRs.next()) {
+        String email = myRs.getString("email");
+        out.println(email);
+        System.out.println(email);
+      }
+    } catch (Exception exc) {
+      exc.printStackTrace();
+      out.println(exc.getMessage());
+    }
+  }
 
 }
